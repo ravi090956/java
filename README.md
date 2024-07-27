@@ -113,3 +113,4 @@ Even if you are not using code obfuscation, you can still use this gem to map
 Java class names to their original file paths, as Java stack traces do not
 include the full path to source files, which Squash needs to perform its
 Git-blame magic.
+ravi

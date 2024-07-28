@@ -32,7 +32,6 @@ options {
                 stage('publish') {
                     steps {
                         echo 'publish'
-                        }
                     }
                 }
             }

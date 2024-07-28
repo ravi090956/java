@@ -16,6 +16,9 @@ options {
             steps {
                 sh 'cat README.md'
             }
+            steps {
+                sh 'echo hi'
+            }
         }
     }
 }

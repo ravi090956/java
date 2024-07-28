@@ -16,8 +16,23 @@ options {
             steps {
                 sh 'cat README.md'
             }
-            steps {
-                sh 'echo hi'
+        stage('target environment') {
+            parallel {
+                stage('info') {
+                    steps {
+                        echo 'info'
+                    }
+                }
+                stage('copy') {
+                    steps {
+                        echo 'copy'
+                    }
+                }
+                stage('publish') {
+                    steps {
+                        echo 'publish'
+                    }
+                }
             }
         }
     }

@@ -16,6 +16,7 @@ options {
             steps {
                 sh 'cat README.md'
             }
+        }
         stage('target environment') {
             parallel {
                 stage('info') {
